@@ -71,12 +71,17 @@ console.log(color)
     </div>
     <div class="hd-theme">
       <div class="hd-theme-box">
-        <button><i class="fas fa-moon"></i></button>
+        <button><font-awesome-icon icon="fa-solid fa-moon" /></button>
       </div>
     </div>
   </div>
   <div class="hd-sm">
-    bbb
+    <button><a href="">log</a></button>
+    <div class="hd-sm-menu">
+      <div class="hd-sm-menu-i">
+        <font-awesome-icon icon="fa-solid fa-bars" />
+      </div>   
+    </div>
   </div>
 </div>
   
@@ -86,7 +91,7 @@ console.log(color)
   .hd-box {
     position: fixed;
     top: 0;
-    /* z-index: 99; */
+    z-index: 99;
     width: 100%;
     height: 56px;
     background-color: v-bind(color);
@@ -137,15 +142,17 @@ console.log(color)
     position: absolute;
     top: 8px;
     cursor: pointer;
+    width: 38px;
     /* text-align: center; */
   }
-  .header-con-r-fa {
-    cursor: pointer;
-  }
   .hd-theme-box button{
+    width: 38px;
     font-size: 1.25rem;
     border-style: none;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .hd-theme-box :hover{
     background-color: #e9e8e8;
@@ -155,14 +162,14 @@ console.log(color)
     display: flex;
     height: 100%;
   }
-  .header-log-m button{
+  .hd-sm button{
     margin: auto;
     border: none;
     height: 100%;
     font-size: 1.75rem;
     font-weight: 600;
   }
-  .header-m-menu {
+  .hd-sm-menu {
     position: relative;
     height: 36px;
     width: 36px;
@@ -174,10 +181,10 @@ console.log(color)
     box-shadow: 1px 1px 4px -3px rgb(168, 168, 168), -1px -1px 4px -3px rgb(168, 168, 168),
     -1px 1px 4px -3px rgb(168, 168, 168),1px -1px 4px -3px rgb(168, 168, 168);
   }
-   .header-m-menu :hover{
+   .hd-sm-menu :hover{
     background-color: #e7e7e7c5;
    }
-  .header-m-menu-i {
+  .hd-sm-menu-i {
     position: absolute;
     width: 36px;
     height: 36px;
@@ -187,7 +194,7 @@ console.log(color)
     transform: translate(-50%, -50%);
     font-size: 1.25rem;
   }
-  .header-m-menu-i i {
+  .hd-sm-menu-i i {
     margin-top: 8px;
   }
 
