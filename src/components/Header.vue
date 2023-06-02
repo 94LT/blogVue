@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 import {storeToRefs} from 'pinia'
 import { useThemeStore } from '@/stores/themeMsg'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faList,faMoon,faBars } from '@fortawesome/free-solid-svg-icons'
+library.add(faList,faMoon,faBars)
 
 function handleScroll() {
   var startHeight = window.pageYOffset || document.documentElement.scrollTop;
